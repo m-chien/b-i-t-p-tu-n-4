@@ -1,12 +1,19 @@
+package baitaptuan3;
+
 import java.util.Scanner;
 
 public class bai1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("nhap n: ");
-        int n = sc.nextInt();
-        int tong=0;
-        for (int i = 1; i <= n; i++) tong += i;
-        System.out.println(tong);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nhap mot so: ");
+        int num = scanner.nextInt();
+        if (num > 0) {
+            System.out.println("So duong");
+        } else if (num < 0) {
+            System.out.println("So am");
+        } else {
+            System.out.println("La so 0");
+        }
+        scanner.close();
     }
 }

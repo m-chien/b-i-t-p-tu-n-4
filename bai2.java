@@ -1,8 +1,23 @@
+package baitaptuan3;
+
+import java.util.Scanner;
+
 public class bai2 {
     public static void main(String[] args) {
-        for (int i = 1; i <= 10; i++) {
-            for (int j = 1; j <= 10; j++) System.out.println(i+"X"+j+"= "+i*j);
-            System.out.println("---------------------");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nhap Diem TB: ");
+        float DTB = scanner.nextFloat();
+        if (DTB > 8.5) {
+            System.out.println("Xep loai A");
+        } else if (DTB > 7) {
+            System.out.println("Xep loai B");
+        } else if (DTB > 6) {
+            System.out.println("Xep Loai C");
+        } else if (DTB > 5) {
+            System.out.println("Xep Loai D");
+        } else {
+            System.out.println("Xep Loai F");
         }
+        scanner.close();
     }
 }
