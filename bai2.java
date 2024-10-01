@@ -1,8 +1,18 @@
+package baitaptuan4;
+
+import java.util.Scanner;
+
 public class bai2 {
     public static void main(String[] args) {
-        for (int i = 1; i <= 10; i++) {
-            for (int j = 1; j <= 10; j++) System.out.println(i+"X"+j+"= "+i*j);
-            System.out.println("---------------------");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhap so cua bang cuu chuong: ");
+        int n, i;
+        int product;
+
+        n = sc.nextInt();
+        for (i = 1; i <= 10; i++) {
+            product = i * n;
+            System.out.println(i + "*" + n + "=" + product);
         }
     }
 }
